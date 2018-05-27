@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,600,700,800');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.header{
+    padding: 40px 0px;
+    margin-bottom: 20px;
+}
+
+.header .brand-name{
+    font-size: 30px;
+    display: inline-block;   
+    width: 300px;
+}
+
+.header ul{
+    list-style: none;
+    padding: 0;
+    display: inline;
+    margin: 0;
+    float: right;
+    margin: 15px;
+}
+
+.header ul li{
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.header ul li a{
+    color: #000;
+    font-weight: 700;
+}
+
+.line-black{
+    background: #000;
+    width: 100%;
+    height: 2px;
+}
+
+.post{
+    background: #e9e9e9;
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color: #e27114!important;
+    transition: color 0.2s ease-in-out;
+}
+
+.post .title{
+    font-size: 28px;
+    color: #fff;
+    z-index: 3;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-shadow: 1px 1px #000;
+}
+
+.image-content{
+    overflow: hidden;
+}
+
+.post-image{
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    position: relative;
+    z-index: 1;
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;        
+}
+
+.post-image:hover{
+    transition: all 0.3s ease-in-out;    
+    transform: scale(2,2) rotate(5deg);
+}
+
+.post-image::after{
+    content: '';
+    background:#000;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.post-image:hover::after{
+    transition: all 0.3s ease-in-out;
+    opacity: 0.1;
+}
+
+.post .post-description{
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+    color: #e9e9e9;
+    left: 10px; 
+    text-shadow: 1px 1px #000;
+}
+
+.post .post-description .date-time{
+    font-style: italic;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.menu{
+    background: transparent;
+    padding: 10px;
+    border: 1px solid #e27114;
+}
+
+.menu h5{
+    margin-bottom: 20px;
+}
+
+.menu ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.menu ul li a{
+    font-weight: 700;
+    border-bottom: 1px solid #f7f7f7;
+    display: inline-block;
+    width: 100%;    
+    padding: 5px;
+    color: #000;
+}
+
+.menu ul li a:last-child{
+    border-bottom: none;
+}
