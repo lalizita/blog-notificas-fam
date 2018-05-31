@@ -147,3 +147,25 @@ a:hover{
 .menu ul li a:last-child{
     border-bottom: none;
 }
+
+.title{
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.description{
+    color: rgb(97, 97, 97);
+    font-weight: 400;
+    font-style: italic;
+}
+
+.image{
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
